@@ -1,3 +1,6 @@
 [submodule "anchor"]
 	path = anchor
 	url = git@github.com:ibg101/ido-vesting-anchor.git
+[submodule "native_rust"]
+	path = native_rust
+	url = git@github.com:ibg101/ido-vesting-native.git
