@@ -74,5 +74,13 @@ This monorepo contains two submodules:
 ---
 
 ## Benchmarks (CU usage)
+> This section compares two implementations of the same Smart Contract.
 
-todo
+You can verify the data [here](https://github.com/ibg101/ido-vesting-monorepo/blob/main/benchmarks).
+
+| Component        | Initialize IDO | Buy Tokens | Claim Tokens (1st) | Claim Tokens (2nd) |
+|------------------|----------------|------------|---------------------|---------------------|
+| **Anchor**       | 38,374 CU      | 20,574 CU  | 22,083 CU           | 21,864 CU           |
+| **Native Rust**  | 18,068 CU      | 9,662 CU   | 10,947 CU           | 11,041 CU           |
+
+As you can see, the **native Rust implementation consumes ~2x fewer compute units** across all instructions!
